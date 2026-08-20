@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /tmp/cc-agent/67142208/project && npm run build 2>&1 || echo '{\"systemMessage\": \"You did not run \\\"npm run build\\\". Run \\\"npm run build\\\" to ensure the project builds correctly, and fix any issues.\"}'",
+            "timeout": 60,
+            "statusMessage": "Building project..."
+          }
+        ]
+      }
+    ]
+  }
+}
